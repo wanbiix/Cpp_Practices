@@ -27,7 +27,7 @@ void hcn::xuat(){
 int main(){
   hcn hinh[10];
   for (int i = 0; i < 10; i++) {
-    cout << "HCN" << i + 1 << "  ";
+    cout<<"HCN"<<i+1<<"  ";
     hinh[i].nhap();
     hinh[i].tinhdt();
     hinh[i].tinhcv();
