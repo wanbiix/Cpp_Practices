@@ -6,22 +6,24 @@ struct hocsinh{
      char hoten[50];
      char xeploai[50];
      float diem, dtb;
-     int somon, a[50];
+     int somon;
 };
 void input(hocsinh &hs){
+	int a[50];
 	cout<<"Nhap ho ten: ";
 	cin.getline(hs.hoten, 50);
 	cout<<"Nhap so mon can tinh ÐTB: ";
 	cin>>hs.somon;
 	for(int i=1;i<=hs.somon;i++){
 		cout<<"Nhap diem mon "<<i<<": ";
-		cin>>hs.a[i]; 
+		cin>>a[i]; 
 	}
 	cout<<"==================================="<<endl;
 }
 void dtb(hocsinh &hs){
+	int a[50];
 	for(int i=1; i<=hs.somon;i++){
-		hs.diem=hs.diem+hs.a[i];
+		hs.diem=hs.diem+a[i];
 	}
 	hs.dtb=hs.diem/hs.somon;
 }
@@ -43,6 +45,8 @@ void output( hocsinh hs){
 int main(){
 	struct hocsinh hs;	
 	input(hs);
+	dtb(hs);
+	xeploai(hs);
 	output(hs);	
 }
 
