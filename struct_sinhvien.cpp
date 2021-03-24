@@ -26,12 +26,13 @@ float dtb;    // dtb ca lop
 
 void nhap(sinhvien &sv){
 	int a[50];
-     cout<<"Nhap ho va ten: "<<endl;
-     cin.getline(sv.hoten, 50);
-     for (int i=1; i<=somon; i++){
-     	cout<<"Nhap diem mon "<<i<<": ";
-     	cin>>a[i];
-	}
+	cin.ignore();
+        cout<<"Nhap ho va ten: ";
+        cin.getline(sv.hoten, 50);
+        for (int i=1; i<=somon; i++){
+		cout<<"Nhap diem mon "<<i<<": ";
+     		cin>>a[i];
+        }
 	cout<<"====================="<<endl; 
 }
 
@@ -68,14 +69,14 @@ void xuat(sinhvien sv){
 
 void nhap_nhieu_sv(sinhvien a[], int n){
      for (int i = 1; i <=n; i++){
-		cout << "IMPORT INFOR SV"<<i<<": "<<endl;
+		cout << "      IMPORT INFOR SV"<<i<<": "<<endl;
 		nhap(a[i]);
      }
 }     
 
 void xuat_nhieu_sv(sinhvien a[], int n){
      for (int i = 1; i <=n; i++){
-		cout << "INFOR SV"<<i<<": "<<endl;
+		cout << "      INFOR SV"<<i<<": "<<endl;
 		xuat(a[i]);
      }
 }
@@ -87,8 +88,12 @@ int main(){
     cout<<"Nhap so mon hoc: ";  
     cin>>somon;
     nhap_nhieu_sv(a, siso);
+    //tinh(a[100]);
+    //xeploai(a[100]);
     xuat_nhieu_sv(a, siso);
+    
 }
+
 
 
 
