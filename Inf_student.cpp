@@ -1,6 +1,6 @@
 /*
 Thiết kế chương trình lưu trữ thông tin sinh viên của 1 trường đại học,
-biết thông tin sinh viên gồm : 
+biết thông tin sinh viên gồm: 
 - Mã số
 - Họ tên
 - Năm sinh
