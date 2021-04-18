@@ -301,7 +301,7 @@ int main(int argc, char *argv[]){
           }
      cout<<"Nhan y de tiep tuc: ";
      cin>>confirm;
-     } while(confirm=='y');
+     }while(confirm=='y');
 
 return 0;
 }
